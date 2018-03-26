@@ -1,0 +1,33 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Security-Policy" content="frame-src http: https:">
+</head>
+
+<body>
+	CSP used: &lt;meta http-equiv="Content-Security-Policy" content="frame-src http: https:"&gt;
+	<br />
+	<br /> All of these iframes are blocked in Edge. Check the dev tools console.
+	<br />
+	<br /> DNS error (http://wikiopedia.org)
+	<br />
+	<iframe src="http://wikiopedia.org"></iframe>
+	<br />
+	<br /> Generic 400 response (blank page) (https://httpbin.org/status/400)
+	<br />
+	<iframe src="https://httpbin.org/status/400"></iframe>
+	<br />
+	<br /> Generic 404 response (blank page) (https://httpbin.org/status/404)
+	<br />
+	<iframe src="https://httpbin.org/status/404"></iframe>
+	<br />
+	<br />Generic 500 response (blank page) (https://httpbin.org/status/500)
+	<br/>
+	<iframe src="https://httpbin.org/status/500"></iframe>
+	<br />
+	<br/>Fake malware blocked by MS smartscreen (http://demo.smartscreen.msft.net/other/malware.html)
+	<br/>
+	<iframe src="http://demo.smartscreen.msft.net/other/malware.html"></iframe>
+</body>
+
+</html>
